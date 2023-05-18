@@ -18,7 +18,7 @@ function Header() {
                                     <li>Projects</li>
                                     <li>Contact</li>
                                 </ul>
-                                <button id='resume-btn'>Resume</button>
+                                <button id='resume-btn'>Résumé</button>
                             </div>
                             {/* <img src={menu} alt='menu-icon' id='hamburger'/>  */}
                         </div> 
