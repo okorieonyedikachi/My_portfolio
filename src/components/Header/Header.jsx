@@ -7,11 +7,20 @@ function Header() {
             <nav className='navBar'>
                 <div className='nav-container'>
                     <header className='header'>
-                        <div className='header-right'>
+                        <div className='header-left'>
                             <h2>Dannie.</h2>
                         </div>
-                        <div className='header-left'>
-                            <img src={menu} alt='menu-icon' id='hamburger'/> 
+                        <div className='header-right'>
+                            <div className='nav-menu'>
+                                <ul id='nav-items'>
+                                    <li>About</li>
+                                    <li>Skills</li>
+                                    <li>Projects</li>
+                                    <li>Contact</li>
+                                </ul>
+                                <button id='resume-btn'>Resume</button>
+                            </div>
+                            {/* <img src={menu} alt='menu-icon' id='hamburger'/>  */}
                         </div> 
                     </header>
                     
