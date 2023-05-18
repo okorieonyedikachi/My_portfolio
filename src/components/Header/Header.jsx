@@ -4,14 +4,19 @@ function Header() {
    
     return(
         <>
-            <div className='header'>
-                <nav>
-                    <div className='nav-container'>
-                        <h2>Dannie.</h2>
-                        <img src={menu} alt='menu-icon' id='hamburger'/>
-                    </div>
-                </nav>
-            </div>
+            <nav className='navBar'>
+                <div className='nav-container'>
+                    <header className='header'>
+                        <div className='header-right'>
+                            <h2>Dannie.</h2>
+                        </div>
+                        <div className='header-left'>
+                            <img src={menu} alt='menu-icon' id='hamburger'/> 
+                        </div> 
+                    </header>
+                    
+                </div>
+            </nav>
         </>
     )
 }
