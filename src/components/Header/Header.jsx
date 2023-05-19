@@ -1,15 +1,20 @@
 import './Headerstyle.css'
 import menu from '../../assets/menu.png'
-import {useState} from 'react';
+import { useState } from 'react';
+
+import Hamburger from '../Hamburger/Hamburger';
 
 function Header() {
 
-   const [isNavOpen, setIsNavOpen] = useState(false);
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+    
 
-   const handleToggle = () =>{
-    setIsNavOpen(!isNavOpen);
-   }
-    return(
+    const toggleHamburger = () =>{
+        setHamburgerOpen(!hamburgerOpen)
+
+    }
+
+    return (
         <>
             <nav className='navBar'>
                 <div className='nav-container'>
@@ -19,25 +24,32 @@ function Header() {
                         </div>
                         <div className='header-right'>
                             <div className='nav-menu'>
-                                <ul className={`nav-items ${isNavOpen? 'open' : ''}`}>
+                                <ul className='nav-items'>
                                     <li>About</li>
                                     <li>Skills</li>
                                     <li>Projects</li>
                                     <li>Contact</li>
+                                    <li>Resume</li>
                                 </ul>
                                 {/* <button id='resume-btn'>Résumé</button> */}
                             </div>
-                            <div className={`humburger ${isNavOpen ? 'open' : ''}`} onClick={handleToggle}>
-                                <div className="line"></div>
-                                <div className="line"></div>
-                                <div className="line"></div>
-                                {/* <img src={menu} alt='menu-icon' className='hamburger'/> */}
+                            <div className='hamburger' onClick={toggleHamburger}>
+                                <Hamburger />
                             </div>
+                            
                         </div> 
                     </header>
                     
                 </div>
             </nav>
+            <style jsx>{`
+                @media (max-width: 767px){
+                    .nav-items{
+                        display: ${hamburgerOpen ? 'inline' : 'none'};
+                        
+                    } 
+                }    
+            `}</style>
         </>
     )
 }

@@ -1,0 +1,22 @@
+
+
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    z-index: 10;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+   
+
+.line {
+    width: 2rem;
+    height: 0.1rem;
+    border-radius: 10px;
+    background-color: #0b0b0b;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+    
+  }
+  
