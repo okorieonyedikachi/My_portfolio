@@ -1,16 +1,23 @@
 @media screen and (max-width:767px){
     #home {
-        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
+
     .sections-wrapper {
         width: 100vw;
     }
+
+    .hero-container {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
-.sections-wrapper {
-    width: 100vw;
-}
+/* .sections-wrapper {
+    /* width: 100vw;
+}  */
 
 #home {
     /* width: 100%; */

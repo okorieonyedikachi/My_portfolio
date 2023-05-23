@@ -1,4 +1,7 @@
 @media screen and (max-width:767px){
+    .navBar{ 
+        width: 100%;
+    }
     .hamburger{
         display:fixed;
         padding-top: 10px;
@@ -21,9 +24,10 @@
 }
 
 
-
 .navBar {
-    height: 30%;
+    /* width: 100vw; */
+    /* height: 30%; */
+   /* display: flex; */
     position: sticky;
     z-index: 100;
     top: 0;
@@ -31,6 +35,7 @@
     backdrop-filter: blur(10px);
     /* background-color: red; */
 }
+
 
 .header {
     display: flex;

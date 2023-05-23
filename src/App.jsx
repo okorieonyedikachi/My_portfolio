@@ -7,7 +7,11 @@ function App() {
   return (
     <div className='body'>
       <Header/>
-      <Mainbody/>
+      <div className='main-body'>
+        <Mainbody/>
+        <p>jhfi</p>
+      </div>
+      
     </div>
   )
 }

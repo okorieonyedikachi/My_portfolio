@@ -15,7 +15,7 @@ function Header() {
     }
 
     return (
-        <>
+        <div>
             <nav className='navBar'>
                 <div className='nav-container'>
                     <header className='header'>
@@ -50,7 +50,7 @@ function Header() {
                     } 
                 }    
             `}</style>
-        </>
+        </div>
     )
 }
 export default Header;

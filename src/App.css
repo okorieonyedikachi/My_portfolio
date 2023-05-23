@@ -1,12 +1,25 @@
 * {
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 
-.body {
-    background-color: white;
-    /* width: 100vw; */
+/* @media screen and (max-width:767px){
+    body {
+        width: 100vw;
+    }
+} */
+
+body {
+    background-color: rgb(0, 38, 255);
+    width: 100vw;
+    display: flex;
     /* align-items: center; */
     font-family: 'Inter', sans-serif;
     line-height: 1;
+}
+
+.main-body {
+    width: 100%;
+    background-color: green;
 }
